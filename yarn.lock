@@ -554,6 +554,18 @@
   resolved "https://registry.yarnpkg.com/@tamagui/compose-refs/-/compose-refs-1.0.1-beta.193.tgz#13d1f2f1fc53ee586a94012a49304558d23bed99"
   integrity sha512-2Tw3WxSeVsyMEwTLFl7jjUTESSx17plzTYjZP7RKHmanSQoqVqSjMCqSUvdcHgkZXV0K+vmTSYWZSt3ye2/xUA==
 
+"@tamagui/config-base@^1.0.1-beta.193":
+  version "1.0.1-beta.193"
+  resolved "https://registry.yarnpkg.com/@tamagui/config-base/-/config-base-1.0.1-beta.193.tgz#e6297275a634a8c16567acad7ccb91bd971de742"
+  integrity sha512-1MNK6YyPV8ZAjGySXtChecolMNyI0xSenD7M9grvweLq3H/gnB0MsV9cDaEnc9U8XX6J+pvJXASs83FnkHa1qw==
+  dependencies:
+    "@tamagui/colors" "^1.0.1-beta.193"
+    "@tamagui/core" "^1.0.1-beta.193"
+    "@tamagui/font-inter" "^1.0.1-beta.193"
+    "@tamagui/font-silkscreen" "^1.0.1-beta.193"
+    "@tamagui/shorthands" "^1.0.1-beta.193"
+    "@tamagui/theme-base" "^1.0.1-beta.193"
+
 "@tamagui/config-default-node@^1.0.1-beta.193":
   version "1.0.1-beta.193"
   resolved "https://registry.yarnpkg.com/@tamagui/config-default-node/-/config-default-node-1.0.1-beta.193.tgz#794d914fc82a16b25e512a15d578cb47c2d62726"
@@ -652,6 +664,20 @@
   integrity sha512-IVEJmxzSPCs+G8Chv+PmvyHaTjCjKu/1t7DY18sUoLUjDCvnaaMayNJI/5hiC2pOtgVCNX/JYs5MGznXCrffCA==
   dependencies:
     "@tamagui/compose-refs" "^1.0.1-beta.193"
+    "@tamagui/core" "^1.0.1-beta.193"
+
+"@tamagui/font-inter@^1.0.1-beta.193":
+  version "1.0.1-beta.193"
+  resolved "https://registry.yarnpkg.com/@tamagui/font-inter/-/font-inter-1.0.1-beta.193.tgz#7a209512b3f509192d798070d89ae30fc0c6986b"
+  integrity sha512-Z7GDM/hxAxfm0oNod1nyxP0naQJpYhxE4Pohn0VSK14sibnsTw/x9IoqGoS1sFL7gGT/3uZXZp2IcW7JJz0bxw==
+  dependencies:
+    "@tamagui/core" "^1.0.1-beta.193"
+
+"@tamagui/font-silkscreen@^1.0.1-beta.193":
+  version "1.0.1-beta.193"
+  resolved "https://registry.yarnpkg.com/@tamagui/font-silkscreen/-/font-silkscreen-1.0.1-beta.193.tgz#4ab3dc2b91896be1ef4718d84ceb6ed8190689e6"
+  integrity sha512-MAID5vffI2+Adl235svoHL+PK1lo7xpQnI8MYKywdt5HmCYkD/f6OUXxZZjrCRunJJV9h93BiGNQZdGmNDFHaQ==
+  dependencies:
     "@tamagui/core" "^1.0.1-beta.193"
 
 "@tamagui/font-size@^1.0.1-beta.193":

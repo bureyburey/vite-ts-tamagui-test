@@ -1,9 +1,9 @@
-import {createTamagui} from '@tamagui/core';
-import {shorthands} from '@tamagui/shorthands';
-import {themes, tokens} from '@tamagui/theme-base';
+import { config } from '@tamagui/config-base';
+import { createTamagui } from '@tamagui/core';
 
 export default createTamagui({
-    themes,
-    tokens,
-    shorthands,
+    ...config,
+    media: {
+        sm: { maxWidth: 500 },
+    },
 });
