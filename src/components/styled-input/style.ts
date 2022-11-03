@@ -1,4 +1,4 @@
-import { colors } from '../../config/style';
+import {colors} from '../../config/style';
 
 const styles = {
     inputContainer: {

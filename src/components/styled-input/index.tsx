@@ -1,22 +1,37 @@
 import React from 'react';
-
-import {Input as TamaguiInput, SizableText, XStack} from 'tamagui';
+import {styled} from '@tamagui/core';
+import {Input as TamaguiInput, SizableText, XStack, isWeb} from 'tamagui';
 import styles from './style';
 import {ValidationErrorIcon} from '../icons';
 
-type InputProps = {
+type StyledInputProps = {
     label?: string;
     error?: string;
 };
 
-function Input(props: InputProps) {
+const InputFrame = styled(
+    TamaguiInput,
+    {
+        name: 'Input',
+        variants: {
+            isInvalid: {
+                true: {
+                    ...styles.inputInvalid
+                }
+            }
+        } as const
+    },
+    {isReactNative: !isWeb}
+);
+
+function StyledInput(props: StyledInputProps) {
     const {label, error} = props;
 
     return (
         <>
             <SizableText>{label}</SizableText>
             <XStack {...styles.inputContainer}>
-                <TamaguiInput {...styles.input} hoverStyle={error ? styles.inputInvalid.hoverStyle : undefined} focusStyle={error ? styles.inputInvalid.focusStyle : undefined}/>
+                <InputFrame {...styles.input} isInvalid={!!error}/>
                 {!!error && (
                     <ValidationErrorIcon width={16} height={16} style={styles.ValidationErrorIcon}/>
                 )}
@@ -26,4 +41,4 @@ function Input(props: InputProps) {
     );
 }
 
-export default Input;
+export default StyledInput;
