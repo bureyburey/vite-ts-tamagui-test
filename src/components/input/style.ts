@@ -16,6 +16,7 @@ const styles = {
         color: colors.gray,
         paddingHorizontal: 15,
         paddingVertical: 11,
+        marginHorizontal: -1,
         focusStyle: {
             backgroundColor: colors.white,
             outline: 'none',
@@ -26,6 +27,8 @@ const styles = {
         }
     },
     inputInvalid: {
+        borderColor: colors.errorRed,
+        borderWidth: 1,
         hoverStyle: {
             borderColor: colors.errorRed,
             borderWidth: 1

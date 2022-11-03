@@ -12,11 +12,11 @@ type StyledInputProps = {
 const InputFrame = styled(
     TamaguiInput,
     {
-        name: 'Input',
+        name: 'StyledInput',
         variants: {
             isInvalid: {
                 true: {
-                    ...styles.inputInvalid
+                    ...styles.inputInvalid,
                 }
             }
         } as const
@@ -31,7 +31,7 @@ function StyledInput(props: StyledInputProps) {
         <>
             <SizableText>{label}</SizableText>
             <XStack {...styles.inputContainer}>
-                <InputFrame {...styles.input} isInvalid={!!error}/>
+                <InputFrame {...styles.input} isInvalid={!!error} />
                 {!!error && (
                     <ValidationErrorIcon width={16} height={16} style={styles.ValidationErrorIcon}/>
                 )}
