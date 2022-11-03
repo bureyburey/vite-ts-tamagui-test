@@ -5,7 +5,7 @@ import vitePlugins from '@tamagui/vite-plugin';
 const {tamaguiExtractPlugin, tamaguiPlugin} = vitePlugins;
 
 const tamaguiConfig = {
-    config: './src/tamagui.config.ts',
+    config: './src/config/tamagui.config.ts',
     components: ['tamagui'],
 }
 

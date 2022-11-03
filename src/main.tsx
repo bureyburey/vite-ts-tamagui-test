@@ -4,12 +4,12 @@ import ReactDOM from 'react-dom/client'
 import {TamaguiProvider} from 'tamagui'
 import App from './App'
 import './index.css'
-import config from './tamagui.config'
+import tamaguiConfig from './config/tamagui.config'
 
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
-        <TamaguiProvider config={config}>
+        <TamaguiProvider config={tamaguiConfig}>
             <App/>
         </TamaguiProvider>
     </React.StrictMode>

@@ -3,7 +3,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {TamaguiProvider} from 'tamagui'
 import './index.css'
-import config from './tamagui.config'
+import config from './config/tamagui.config'
 import AppJSX from "./AppJSX";
 
 
