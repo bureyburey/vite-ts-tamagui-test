@@ -6,7 +6,8 @@
   ],
   "scripts": {
     "dev": "lerna run dev",
-    "ios": "lerna run ios"
+    "ios": "lerna run ios",
+    "build": "lerna run build"
   },
   "devDependencies": {
     "lerna": "^6.0.3",
