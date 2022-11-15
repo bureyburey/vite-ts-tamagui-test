@@ -10,6 +10,11 @@ const tamaguiConfig = {
 }
 
 export default defineConfig({
+    resolve: {
+        alias: [
+            { find: 'react-native', replacement: 'react-native-web' }
+        ]
+    },
     plugins: [
         react(),
         tamaguiPlugin({

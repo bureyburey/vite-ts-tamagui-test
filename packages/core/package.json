@@ -7,13 +7,16 @@
   "type": "module",
   "private": true,
   "dependencies": {
-    "@tamagui/babel-plugin": "^1.0.1-beta.211",
-    "@tamagui/config-base": "^1.0.1-beta.211",
-    "@tamagui/shorthands": "^1.0.1-beta.211",
-    "@tamagui/theme-base": "^1.0.1-beta.211",
-    "@tamagui/vite-plugin": "^1.0.1-beta.211",
+    "@tamagui/animate-presence": "^1.0.1-beta.216",
+    "@tamagui/babel-plugin": "^1.0.1-beta.216",
+    "@tamagui/config-base": "^1.0.1-beta.216",
+    "@tamagui/core": "^1.0.1-beta.216",
+    "@tamagui/shorthands": "^1.0.1-beta.216",
+    "@tamagui/theme-base": "^1.0.1-beta.216",
+    "@tamagui/vite-plugin": "^1.0.1-beta.216",
+    "@types/react-native-vector-icons": "^6.4.12",
     "expo": "^46.0.0",
     "react-native-vector-icons": "^9.2.0",
-    "tamagui": "^1.0.1-beta.211"
+    "tamagui": "^1.0.1-beta.216"
   }
 }

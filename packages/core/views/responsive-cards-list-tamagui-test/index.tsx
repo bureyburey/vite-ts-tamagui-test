@@ -21,7 +21,7 @@ const style = {
       width: '100%'
     }
   }
-};
+} as const;
 
 export function ResponsiveCardsListTamaguiTest() {
   const data = DATA;

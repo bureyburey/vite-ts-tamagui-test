@@ -6,7 +6,7 @@ import { CardHeader } from './header';
 import { CardMeta } from './meta';
 import { shadow } from '../../config/style';
 
-export function CardTamagui(props) {
+export function CardTamagui(props: any) {
   const [isHovered, callbacks] = useOnHover();
   const { data } = props;
   const { campaign } = data;
@@ -93,4 +93,4 @@ const style = {
     height: '100%',
     width: '100%'
   }
-};
+} as const;

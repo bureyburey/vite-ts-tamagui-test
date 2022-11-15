@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-// @ts-ignore
 import {ResponsiveCardsListTamaguiTest} from "core/views/responsive-cards-list-tamagui-test";
 import AppProviders from "core/AppProviders";
 

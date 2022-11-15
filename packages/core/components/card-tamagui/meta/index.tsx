@@ -112,13 +112,13 @@ const REQUIREMENTS_MAP = {
 
 const REQUIREMENTS_ORDER = ['photo', 'blog', 'video', 'mixedMedia', 'network', 'story'];
 
-export function CardMeta({ data, hideCompletedAmount }) {
+export function CardMeta(props: any) {
+  const { data, hideCompletedAmount } = props;
   return (
     <YStack {...style.container}>
       <XStack {...style.requirements}>
         {REQUIREMENTS_ORDER.map((requirementKey) => {
-          const { label, type, shouldDisplay, completedAmount, requiredAmount } =
-            REQUIREMENTS_MAP[requirementKey];
+          const { label, type, shouldDisplay, completedAmount, requiredAmount } = REQUIREMENTS_MAP[requirementKey];
           if (!shouldDisplay(data)) {
             return null;
           }
