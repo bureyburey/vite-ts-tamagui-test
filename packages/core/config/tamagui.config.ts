@@ -1,9 +1,9 @@
 import {config} from '@tamagui/config-base';
 import {createTamagui, createTokens, setupReactNative} from '@tamagui/core';
-import * as ReactNative from 'react-native';
+// import * as ReactNative from 'react-native';
 import colors from './colors';
 
-setupReactNative(ReactNative);
+// setupReactNative(ReactNative);
 
 export const tamaguiTokens = createTokens({
     ...config.tokens,
